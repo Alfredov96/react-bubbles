@@ -23,15 +23,12 @@ function App() {
       </ul>
 
       <div className="App">
-        <Route exact path="/" component={Login} />
-        {/* 
-          Build a PrivateRoute component that will 
-          display BubblePage when you're authenticated 
-        */}
+        {/* <Route exact path="/" component={Login} /> */}
+       
         <Switch>
           <PrivateRoute exact path='/' component={BubblePage} />
           <Route path='/login' component={Login} />
-          <Route component={Login} />
+          {/* <Route component={Login} /> */}
         </Switch>
       </div>
     </Router>
